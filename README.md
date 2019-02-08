@@ -1,0 +1,1 @@
+# sbt-child-project-example
