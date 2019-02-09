@@ -1,9 +1,9 @@
 package example
 
-import org.scalatest._
+import childExample.HelloFromChildTest
 
-class HelloSpec extends FlatSpec with Matchers {
+class HelloSpec extends HelloFromChildTest {
   "The Hello object" should "say hello" in {
-    Hello.greeting shouldEqual "hello"
+    Hello.greeting shouldEqual "HelloFromChild"
   }
 }

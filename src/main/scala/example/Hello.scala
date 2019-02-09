@@ -1,9 +1,8 @@
 package example
 
-object Hello extends Greeting with App {
+import childExample.HelloFromChild
+
+object Hello extends HelloFromChild with App {
   println(greeting)
 }
 
-trait Greeting {
-  lazy val greeting: String = "hello"
-}
